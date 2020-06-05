@@ -1,0 +1,15 @@
+semi: false
+overrides:
+  - files: "*.test.js"
+    options:
+      semi: true
+      tabWidth: 2
+      useTabs: false
+  - files:
+      - "src/*.html"
+      - "legacy/**/*.js"
+      - "src/*.ts"
+    options:
+      tabWidth: 2
+      useTabs: false
+      semi: true
