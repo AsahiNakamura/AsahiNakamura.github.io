@@ -57,7 +57,7 @@ module.exports = {
     port: 9000,
   },
   resolve: {
-    extensions: [".ts", ".js", ".scss"],
+    extensions: [".ts", ".js", ".scss", ".sass", ".css", ".json"],
   },
   module: {
     rules: [

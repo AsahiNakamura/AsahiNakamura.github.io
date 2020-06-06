@@ -2,35 +2,42 @@
 <html>
   <head>
     <link rel="shortcut icon" href="./assets/ico/favicon.ico" />
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/azimicat.png" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <div>
-      <h1 class="top-title">www.azimicat.com</h1>
-      <p>ここはazimicatのページ。日記とか書くところ。</p>
-    </div>
-    <div>
-      <h2>Links</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/azimicat" target="_blank">github</a>
-        </li>
-        <li><a href="https://gist.github.com/azimicat" target="_blank">gist</a></li>
-        <li>
-          <a href="https://blog.azimicat.com" target="_blank">備忘録blog</a>
-        </li>
-        <li>
-          <a href="https://lapras.com/public/NQKCAPM" target="_blank">lapras</a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/azimicat2019/" target="_blank">instagram</a>
-        </li>
-        <li>
-          <a href="https://www.amazon.jp/hz/wishlist/ls/3P4R3QT0ONEGY?ref_=wl_share" target="_blank">ほしい物リスト</a>
-        </li>
-      </ul>
+    <div class="block">
+      <header class="block-header">
+        <h1 class="header_title">www.azimicat.com</h1>
+        <div class="header_sns">
+          <div class="header_sns_icons">
+            <a href="https://github.com/azimicat" target="_blank" title="github">
+              <img src="https://unpkg.com/simple-icons@v2/icons/github.svg" />
+            </a>
+            <a href="https://blog.azimicat.com" target="_blank" title="notebook"><i class="material-icons">desktop_windows</i></a>
+            <a href="https://lapras.com/public/NQKCAPM" target="_blank" title="lapras">
+              <i class="material-icons">account_circle</i>
+              <a href="https://www.instagram.com/azimicat2019/" target="_blank" title="instagram">
+                <img src="https://unpkg.com/simple-icons@v2/icons/instagram.svg" />
+              </a>
+              <a href="https://open.spotify.com/user/22wbewrvlsugvfjdgu3n7f66a" target="_blank" title="spotify">
+                <img src="https://unpkg.com/simple-icons@v2/icons/spotify.svg" />
+              </a>
+            </a>
+            <a href="https://www.amazon.jp/hz/wishlist/ls/3P4R3QT0ONEGY?ref_=wl_share" target="_blank" title="amazon wishlist">
+              <img src="https://unpkg.com/simple-icons@v2/icons/amazon.svg" />
+            </a>
+          </div>
+        </div>
+      </header>
+      <main class="block-main">
+        this is main text.
+      </main>
+      <footer class="footer_area">
+        <!-- ここはフッター -->
+      </footer>
     </div>
   </body>
 </html>

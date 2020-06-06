@@ -1,0 +1,54 @@
+.block {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  &-header {
+    text-align: center;
+  }
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+
+    /* WebKitブラウザサポート */
+    -webkit-font-smoothing: antialiased;
+    /* Chrome、Safariサポート */
+    text-rendering: optimizeLegibility;
+    /* Firefoxサポート */
+    -moz-osx-font-smoothing: grayscale;
+    /* IEサポート */
+    font-feature-settings: "liga";
+  }
+}
+
+@media (min-width: 576px) {
+  .block {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .block {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .block {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .block {
+    max-width: 1140px;
+  }
+}
