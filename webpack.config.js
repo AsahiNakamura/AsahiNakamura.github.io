@@ -36,9 +36,10 @@ module.exports = {
             inject: "body"
         }),
         new CopyPlugin({
-            patterns: [
-                {to: "./assets/", from: path.join(__dirname, "./public/assets")}
-            ]
+            patterns: [{
+                to: "./assets/",
+                from: path.join(__dirname, "./public/assets")
+            }]
         }),
         new CleanWebpackPlugin()
     ],

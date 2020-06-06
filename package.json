@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack && serve ./docs/",
-    "watch": "webpack-dev-server"
+    "watch": "webpack-dev-server",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml,html,md,scss}\""
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.5.3",
     "html-webpack-plugin": "^4.3.0",
+    "prettier": "^2.0.5",
     "sass": "^1.26.8",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
