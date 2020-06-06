@@ -43,6 +43,10 @@ module.exports = {
           to: "./assets/",
           from: path.join(__dirname, "./public/assets"),
         },
+        {
+          to: "./",
+          from: path.join(__dirname, "CNAME"),
+        },
       ],
     }),
     new CleanWebpackPlugin(),
