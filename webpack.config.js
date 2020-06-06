@@ -45,8 +45,8 @@ module.exports = {
         },
         {
           to: "./",
-          from: path.join(__dirname, "CNAME")
-        }
+          from: path.join(__dirname, "CNAME"),
+        },
       ],
     }),
     new CleanWebpackPlugin(),
