@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const pkg = require("./package.json");
+const CopyPlugin = require("copy-webpack-plugin");
 const styleLoaderRules = [{
     test: /\.scss/,
     use: [
@@ -27,11 +28,18 @@ module.exports = {
         filename: "scripts/[name].js",
         path: path.join(__dirname, "docs/")
     },
-    plugins: [new HtmlWebpackPlugin({
-        title: pkg.name,
-        template: path.resolve(__dirname, "./public/index.html"),
-        inject: "body"
-    })],
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: pkg.name,
+            template: path.resolve(__dirname, "./public/index.html"),
+            inject: "body"
+        }),
+        new CopyPlugin({
+            patterns: [
+                {to: "./assets/", from: path.join(__dirname, "./public/assets")}
+            ]
+        })
+    ],
     devServer: {
         contentBase: path.join(__dirname, 'docs'),
         compress: true,
