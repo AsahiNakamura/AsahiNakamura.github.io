@@ -20,7 +20,7 @@ const styleLoaderRules = [{
     ]
 }];
 module.exports = {
-    mode: "development",
+    mode: "production",
     devtool: "inline-source-map",
     entry: {
         main: ["./src/main.ts"]
