@@ -32,8 +32,13 @@ module.exports = {
         template: path.resolve(__dirname, "./public/index.html"),
         inject: "body"
     })],
+    devServer: {
+        contentBase: path.join(__dirname, 'docs'),
+        compress: true,
+        port: 9000
+    },
     resolve: {
-        extensions: [".ts"]
+        extensions: [".ts", ".js", ".scss"]
     },
     module: {
         rules: [{
