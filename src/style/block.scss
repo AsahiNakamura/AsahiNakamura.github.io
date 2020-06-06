@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
+  margin: 0 10%;
   &-header {
     text-align: center;
   }
@@ -26,6 +27,13 @@
     -moz-osx-font-smoothing: grayscale;
     /* IEサポート */
     font-feature-settings: "liga";
+  }
+  &-main {
+    &_icons {
+      position: relative;
+      top: 2px;
+      left: -2px;
+    }
   }
 }
 
