@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack && serve ./docs/",
+    "build": "webpack",
+    "start": "webpack && serve ./docs/",
     "watch": "webpack-dev-server",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml,html,md,scss}\"",
     "release": "gh-pages -d ./docs -b master"
