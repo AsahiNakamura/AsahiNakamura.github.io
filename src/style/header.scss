@@ -1,0 +1,29 @@
+.header {
+  &_title {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 58px;
+    margin: 0 0 0 0;
+  }
+  &_sns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: 36px;
+    &_icons {
+      /** エリアの1/2で折り返す */
+      flex-basis: 50%;
+      padding-left: 8px;
+      padding-right: 8px;
+      a {
+        text-decoration: none;
+      }
+      img,
+      i {
+        height: 1em;
+        width: 1em;
+      }
+    }
+  }
+}
