@@ -35,21 +35,3 @@
     }
   }
 }
-
-@media (max-width: 576px) {
-  .block {
-    min-width: 540px;
-  }
-}
-
-@media (max-width: 768px) {
-  .block {
-    min-width: 720px;
-  }
-}
-
-@media (max-width: 992px) {
-  .block {
-    min-width: 960px;
-  }
-}
