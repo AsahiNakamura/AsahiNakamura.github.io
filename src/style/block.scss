@@ -12,9 +12,10 @@
     margin: 0 10%;
     min-height: 60vh;
     &_icons {
+      height: 1em;
       position: relative;
-      top: 2px;
-      left: -2px;
+      top: -2px;
+      left: -5px;
     }
   }
   &-footer {
@@ -30,7 +31,8 @@
         content: "\00a9";
         font-size: 1.8em;
         position: relative;
-        top: 2px;
+        top: 4px;
+        padding-right: .1em;
       }
     }
   }

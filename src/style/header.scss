@@ -16,34 +16,20 @@
       flex-basis: 50%;
       padding-left: 8px;
       padding-right: 8px;
+      &_memorandum {
+        position: relative;
+        top: 1px;
+      }
+      &_lapras {
+        position: relative;
+        top: 1px;
+      }
       a {
         text-decoration: none;
       }
       img {
         width: 1em;
         height: 1em;
-      }
-      &_material-icons {
-        font-family: "Material Icons";
-        font-weight: normal;
-        font-style: normal;
-        font-size: 1.1em;
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        line-height: 1;
-        text-transform: none;
-        position: relative;
-        top: 9px;
-
-        /* WebKitブラウザサポート */
-        -webkit-font-smoothing: antialiased;
-        /* Chrome、Safariサポート */
-        text-rendering: optimizeLegibility;
-        /* Firefoxサポート */
-        -moz-osx-font-smoothing: grayscale;
-        /* IEサポート */
-        font-feature-settings: "liga";
       }
     }
   }
