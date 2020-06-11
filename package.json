@@ -9,7 +9,7 @@
     "start": "webpack && serve ./docs/",
     "watch": "webpack-dev-server",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,yml,yaml,html,md,scss}\"",
-    "release": "gh-pages -d ./docs -b master"
+    "release": "webpack && gh-pages -d ./docs -b master"
   },
   "repository": {
     "type": "git",
