@@ -18,15 +18,23 @@
       padding-right: 8px;
       &_memorandum {
         position: relative;
-        top: 1px;
+        top: 2px;
       }
       &_lapras {
         position: relative;
-        top: 1px;
+        top: 0px;
       }
       &_diary {
         position: relative;
+        top: 0px;
+      }
+      &_amazon {
+        position: relative;
         top: 1px;
+      }
+      &_stackexchange {
+        position: relative;
+        top: -1px;
       }
       a {
         text-decoration: none;
