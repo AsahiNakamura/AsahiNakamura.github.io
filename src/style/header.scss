@@ -1,0 +1,55 @@
+.header {
+  &_title {
+    font-family: "Cabin Sketch", cursive;
+    font-size: 58px;
+    margin: 0 0 0 0;
+  }
+  &_sns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -8px;
+    margin-right: -8px;
+    font-size: 48px;
+    &_icons {
+      /** エリアの1/2で折り返す */
+      flex-basis: 50%;
+      padding-left: 8px;
+      padding-right: 8px;
+      &_memorandum {
+        position: relative;
+        top: 2px;
+      }
+      &_lapras {
+        position: relative;
+        top: 0px;
+      }
+      &_diary {
+        position: relative;
+        top: 0px;
+      }
+      &_amazon {
+        position: relative;
+        top: 1px;
+      }
+      &_stackexchange {
+        position: relative;
+        top: -1px;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    &_title {
+      font-size: 10.25vw;
+    }
+  }
+}
